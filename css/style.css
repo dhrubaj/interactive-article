@@ -1,0 +1,316 @@
+body {
+  background: aliceblue;
+  cursor: pointer;
+}
+
+.content {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.headline {
+  text-align: center;
+  font-style: inherit;
+  font-family: fantasy;
+  font-weight: inherit;
+  font-size: xx-large;
+
+  background-color: #425643;
+  background-image: radial-gradient(#425643,#333c45);
+  background-size: cover;
+  margin-top: -8px;
+  height: 225px;
+}
+
+.footer {
+  background-color: #333c46;
+  background-image: radial-gradient(#424c56,#333c45);
+  height: 100px;
+  margin-bottom: 0px;
+  /*margin-top: 43px;*/
+  text-align: center;
+  color: aliceblue;
+}
+.footer .text {
+  padding-top: 30px;
+}
+
+.headline div {
+  padding: 89px;
+  position: relative;
+  color: white;
+}
+
+.para {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  line-height: 25px;
+  text-align: justify;
+  font-family: sans-serif;
+  font-size: initial;
+}
+
+.tell_me_more.content-added {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: large;
+  font-style: italic;
+  font-family: cursive;
+  border-color: #52E052;
+  background: #E9FBE9;
+  /*padding: .1em .5em .15em;*/
+  /*border-right-style: solid;*/
+  border-left-style: solid;
+
+}
+
+.tell_me_more_wrapper-0.active,
+.tell_me_more_wrapper-1.active,
+.tell_me_more_wrapper-2.active,
+.tell_me_more_wrapper-3.active,
+.tell_me_more_wrapper-4.active {
+  padding-bottom: 20px;
+  padding-top: 14px;
+}
+
+.author-image {
+  display: inline-block;
+  padding-left: 14px;
+  margin-right: 14px;
+}
+
+.tell_me_more.class-processed.content-added {
+  display: inline-block;
+  padding-left: 14px;
+  margin-right: 3px;
+}
+
+.author-image {
+  float: left;
+}
+
+#tell_me_more-1,
+#tell_me_more-2,
+#tell_me_more-3,
+#tell_me_more-4 {
+  display: none;
+}
+#tell_me_more_0,
+#tell_me_more_1,
+#tell_me_more_2,
+#tell_me_more_3,
+#tell_me_more_4 {
+  display: inline-block;
+}
+#tell_me_more_0 span.discontinue,
+#tell_me_more_0 span.continue,
+#tell_me_more_1 span.discontinue,
+#tell_me_more_1 span.continue,
+#tell_me_more_2 span.who-cares,
+#tell_me_more_2 span.lets-go,
+#tell_me_more_3 span.interested,
+#tell_me_more_3 span.not-interested,
+#tell_me_more_4 span.picture,
+#tell_me_more_4 span.video {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Popup container - can be anything you want */
+.popup__,
+.pop--up,
+.popup,
+.pop-up,
+.popup_,
+.pop-up_ {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup__ .pop-uptext,
+.pop--up .popup--text,
+.popup .popuptext,
+.pop-up .popup-text,
+.popup_ .popuptext_,
+.pop-up_ .popup-text_ {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 55px 23px;
+    position: absolute;
+    z-index: 1;
+    bottom: 32px;
+    margin-left: -106px;
+}
+
+/* Popup arrow */
+.popup__ .pop-uptext::after,
+.pop--up .popup--text::after,
+.popup .popuptext::after,
+.pop-up .popup-text::after,
+.popup_ .popuptext_::after,
+.pop-up_ .popup-text_::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup__ .show,
+.pop--up .show,
+.popup .show,
+.pop-up .show,
+.popup_ .show,
+.pop-up_ .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    line-height: 28px;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/* Image video */
+.image-wrapper,
+.video-wrapper {
+  display: none;
+}
+.image-wrapper {
+  float: left;
+  padding-right: 126px;
+}
+.image-wrapper.image-clicked,
+.video-wrapper.video-clicked {
+  display: inline-block !important;
+  padding-top: 25px;
+}
+.image-wrapper.image-clicked .label,
+.video-wrapper.video-clicked .label {
+  display: inline-block;
+  position: absolute;
+  font-size: larger;
+  font-style: initial;
+  font-weight: 600;
+  padding-left: 118px;
+}
+.image-wrapper.image-clicked .image,
+.video-wrapper.video-clicked .video {
+  display: inline-block;
+  padding-top: 26px;
+}
+.image-video-wrapper {
+  display: flex;
+}
+
+/* Three dots animation */
+/*@-webkit-keyframes opacity {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes opacity {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#tell_me_more-0 {
+    text-align: center;
+    margin: 100px 0 0 0;
+}
+
+#tell_me_more-0 span,
+#tell_me_more-1 span,
+#tell_me_more-2 span,
+#tell_me_more-3 span,
+#tell_me_more-4 span {
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: opacity;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+}
+
+#tell_me_more-0 span:nth-child(1),
+#tell_me_more-1 span:nth-child(1),
+#tell_me_more-2 span:nth-child(1),
+#tell_me_more-3 span:nth-child(1),
+#tell_me_more-4 span:nth-child(1) {
+    -webkit-animation-delay: 100ms;
+    -moz-animation-delay: 100ms;
+}
+
+#tell_me_more-0 span:nth-child(2),
+#tell_me_more-1 span:nth-child(2),
+#tell_me_more-2 span:nth-child(2),
+#tell_me_more-3 span:nth-child(2),
+#tell_me_more-4 span:nth-child(2) {
+    -webkit-animation-delay: 300ms;
+    -moz-animation-delay: 300ms;
+}
+
+#tell_me_more-0 span:nth-child(3),
+#tell_me_more-1 span:nth-child(3),
+#tell_me_more-2 span:nth-child(3),
+#tell_me_more-3 span:nth-child(3),
+#tell_me_more-4 span:nth-child(3) {
+    -webkit-animation-delay: 500ms;
+    -moz-animation-delay: 500ms;
+}​*/
+
+/* type animation */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    font-size: x-large;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

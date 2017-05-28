@@ -1,0 +1,53 @@
+{
+  "0": {
+    "tell_me_more": {
+        "0":"Hey, I am Paul.",
+        "1":"I will be your virtual guide today and walk you through this article."
+    },
+    "some_more_details": {
+        "0":"I am very pleased to guide you."
+    },
+    "discontinue": true,
+    "continue": true
+  },
+  "1": {
+    "tell_me_more": {
+      "0":"Nice to virtually meet you, Sam.",
+      "1":"This is an interactive article."
+    },
+    "discontinue": true,
+    "continue": true
+  },
+  "2": {
+    "tell_me_more": {
+      "0":"You can toggle the conversation whenever you like."
+    },
+    "some_more_details": {
+      "0":"Hope you will enjoy the ride. Shall we start?"
+    },
+    "do_not_remind": true,
+    "remind_me": true
+  },
+  "3": {
+    "tell_me_more": {
+      "0":"Seeing your interest..."
+    },
+    "some_more_details": {
+      "0":"I want to take you to some more interesting details. Are you interested, Sam?"
+    },
+    "not_interested": true,
+    "interested": true
+  },
+  "4": {
+    "tell_me_more": {
+      "0":"Let me now take you to a picture, Sam!"
+    },
+    "some_more_details": {
+      "0":"There is a video as well."
+    },
+    "picture": true,
+    "video": true,
+    "picture_url": "dog_PNG172.png",
+    "video_url": "https://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1"
+  }
+}
